@@ -1,0 +1,155 @@
+1 Python Basics
+
+What is Python? Python is a high-level, interpreted programming language known for its readability and simplicity. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+Key Features of Python:
+•	Readable and Simple Syntax: Python's syntax is designed to be intuitive and its code easy to read.
+•	Dynamic Typing: Variable types are determined at runtime, which makes the language flexible and easy to use.
+•	Interpreted Language: Python code is executed line by line, which makes debugging easier.
+•	Extensive Standard Library: Python comes with a vast standard library that supports many common programming tasks.
+•	Cross-Platform Compatibility: Python runs on various platforms, such as Windows, macOS, and Linux.
+•	Community and Ecosystem: A large, active community contributes to a rich ecosystem of third-party packages and tools.
+Use Cases:
+•	Web Development: Using frameworks like Django and Flask.
+•	Data Analysis and Machine Learning: Using libraries like pandas, NumPy, and scikit-learn.
+•	Automation and Scripting: Writing scripts to automate repetitive tasks.
+•	Software Development: General-purpose programming for various applications.
+•	Scientific Computing: Using libraries such as SciPy.
+
+
+2 Installing Python
+
+Steps to Install Python:
+Windows:
+1.	Download the installer from the official Python website.
+2.	Run the installer and follow the prompts. Make sure to check the option to add Python to your PATH.
+3.	Verify the installation by opening Command Prompt and running python --version.
+macOS:
+1.	Install Homebrew if you don't have it by running /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)".
+2.	Install Python by running brew install python.
+3.	Verify the installation by opening Terminal and running python3 --version.
+Linux:
+1.	Open Terminal.
+2.	Install Python using your package manager. For example, on Ubuntu: sudo apt update && sudo apt install python3.
+3.	Verify the installation by running python3 --version.
+Setting Up a Virtual Environment:
+1.	Create a virtual environment: python -m venv myenv.
+2.	Activate the virtual environment:
+o	Windows: myenv\Scripts\activate
+o	macOS/Linux: source myenv/bin/activate
+3.	Deactivate the virtual environment: deactivate
+
+
+3 Python Syntax and Semantics
+
+Simple Python Program:
+python
+print("Hello, World!")
+Explanation:
+•	print: A built-in function that outputs text to the console.
+•	"Hello, World!": A string literal that is the argument to the print function.
+
+
+4 Data Types and Variables
+
+Basic Data Types in Python:
+•	int: Integer numbers (e.g., 1, 2, 3)
+•	float: Floating-point numbers (e.g., 1.0, 2.5)
+•	str: String (e.g., "hello")
+•	bool: Boolean values (e.g., True, False)
+•	list: Ordered, mutable collection (e.g., [1, 2, 3])
+•	tuple: Ordered, immutable collection (e.g., (1, 2, 3))
+•	dict: Unordered, mutable collection of key-value pairs (e.g., {"key": "value"})
+Script:
+python
+# Integer
+x = 10
+print(x)
+
+# Float
+y = 3.14
+print(y)
+
+# String
+name = "Alice"
+print(name)
+
+# Boolean
+is_student = True
+print(is_student)
+
+
+5 Control Structures
+
+Conditional Statements:
+python
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+Loops:
+python
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+
+6 Functions in Python
+
+Functions: Functions are blocks of reusable code that perform a specific task. They help in organizing code and improving its readability.
+Example Function:
+python
+# List
+numbers = [1, 2, 3, 4, 5]
+print(numbers[0])  # Accessing first element
+
+# Dictionary
+student = {"name": "Alice", "age": 21, "major": "Computer Science"}
+print(student["name"])  # Accessing value by key
+
+
+7 Exception Handling
+
+Exception Handling: Exception handling is used to handle errors gracefully without stopping the program abruptly.
+Example:
+python
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+finally:
+    print("This will always execute.")
+
+
+8 Modules and Packages
+
+Modules and Packages: Modules are individual files containing Python code, while packages are collections of modules.
+Importing a Module:
+python
+import math
+
+# Using a function from the math module
+result = math.sqrt(16)
+print(result)
+
+
+9 File I/O
+
+Reading from a File:
+python
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+Writing to a File:
+python
+lines = ["First line", "Second line", "Third line"] with open('output.txt', 'w') as file: for line in lines: file.write(line + '\n')
+ 
+
+ 
+
